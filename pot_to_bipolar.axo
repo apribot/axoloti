@@ -1,0 +1,17 @@
+<objdefs>
+   <obj.normal id="pot_to_bipolar">
+      <sDescription>convert gpio analog to bipolar</sDescription>
+      <author>jm</author>
+      <license>CC0</license>
+      <inlets>
+      	<frac32 name="in" description="in"/>
+      </inlets>
+      <outlets>
+         <frac32.bipolar name="out" description="out"/>
+      </outlets>
+      <displays/>
+      <params/>
+      <attribs/>
+   	  <code.krate><![CDATA[outlet_out = (inlet_in * 2) - 134217728;]]></code.krate>
+   </obj.normal>
+</objdefs>
